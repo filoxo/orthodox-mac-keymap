@@ -4,6 +4,7 @@ This is the keymap for the keyboard
 Copyright 2012 Jun Wako <wakojun@gmail.com>
 Copyright 2015 Jack Humbert
 Copyright 2017 Art Ortenburger
+Copyright 2018 Carlos Filoteo
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
