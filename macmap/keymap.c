@@ -53,11 +53,12 @@ enum custom_keycodes {
 // Friendly names
 #define BRT_DN KC_F14
 #define BRT_UP KC_F15
+#define BSP_ADJ LT(ADJUST, KC_BSPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_QWERTY] = KEYMAP( \
-  KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                                                 KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
+  KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                                                 KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    BSP_ADJ, \
   KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_LEFT, XXXXXXX, KC_DOWN,         KC_UP,  XXXXXXX, KC_RIGHT,KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
   KC_LCTL, KC_LALT, KC_Z,    KC_X,    KC_C,    KC_V,    LOWER,   KC_BSPC, KC_LGUI,         KC_ENT, KC_SPC,  RAISE,   KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH \
 ),
