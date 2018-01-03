@@ -50,6 +50,10 @@ enum custom_keycodes {
 #define _______ KC_TRNS
 #define XXXXXXX KC_NO
 
+// Friendly names
+#define BRT_DN KC_F14
+#define BRT_UP KC_F15
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_QWERTY] = KEYMAP( \
@@ -83,9 +87,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_ADJUST] =  KEYMAP( \
-  _______, RESET,   _______, _______, _______, _______,                                                               _______, _______, _______, _______, _______, KC_DEL,  \
-  _______, _______, _______, AU_ON,   AU_OFF,  AG_NORM, _______, XXXXXXX, _______,         _______, XXXXXXX, _______, AG_SWAP, QWERTY , COLEMAK, DVORAK,  _______, _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______, _______,         _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY  \
+  _______, RESET,   _______, AU_ON,   AU_OFF,  _______,                                                               _______, _______, _______, BRT_DN,  BRT_UP,  _______,  \
+  _______, _______, DVORAK,  COLEMAK, QWERTY,  _______, _______, XXXXXXX, _______,         _______, XXXXXXX, _______, _______, _______, _______, KC_MFFD, KC_MPLY, KC_MRWD, \
+  _______, _______, _______, _______, _______, _______, _______, _______, _______,         _______, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU, KC_MUTE  \
 )
 
 
